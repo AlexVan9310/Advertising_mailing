@@ -1,0 +1,608 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* thin light regular medium bold */
+.header {
+  font-family: 'Roboto', sans-serif;
+  font-style: thin;
+  font-weight: thin;
+  font-size: 52px;
+}
+
+.sub_header {
+  font-family: 'Roboto', sans-serif;
+  font-style: thin;
+  font-weight: thin;
+  font-size: 22px;
+  margin-top: 20px;
+
+}
+
+.block_title {
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.subblock {
+  display: flex;
+
+}
+
+.subblock_point {
+  display: flex;
+
+}
+
+.subblock_point_text {
+  display: flex;
+
+  margin: 0 -40px 0 40px;
+}
+
+
+.subblock_top {
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.subblock1 {
+  display: flex;
+  margin: 20px 0 20px 0;
+
+}
+
+.subblock2 {
+  display: flex;
+  margin: 40px 0 20px 0;
+
+}
+
+.ferst_block {
+  display: flex;
+  margin-left: auto;
+  margin-right: 220px;
+}
+
+.ferst_blocks {
+  display: flex;
+  margin-left: auto;
+  margin-right: 190px;
+
+}
+
+.ferst_blockss {
+  display: flex;
+  margin-left: auto;
+  margin-right: 387px;
+}
+
+.midl_block {
+  display: flex;
+  margin-left: auto;
+  margin-right: 386px;
+
+}
+
+.bottom_block {
+  display: flex;
+  margin-left: auto;
+  margin-right: 384px;
+
+}
+
+.bottom_blocks {
+  display: flex;
+  margin-left: auto;
+  margin-right: 610px;
+
+}
+
+.subblockes {
+  display: flex;
+  margin-left: auto;
+  margin-right: 265px;
+
+}
+
+.subblockess {
+  display: flex;
+  margin-left: auto;
+  margin-right: 655px;
+
+}
+
+.subblockesss {
+  display: flex;
+  margin-left: auto;
+  margin-right: 655px;
+
+}
+
+.block_title1 {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.Details {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text_block {
+  margin-right: 400px;
+}
+
+.text_block1 {
+  margin-right: 357px
+}
+
+.text_block2 {
+  margin-right: 425px
+}
+
+.text_block4 {
+  margin-right: 510px
+}
+
+.text_block5 {
+  margin-right: 120px;
+  padding-left: 20px;
+  margin-top: 20px;
+
+
+}
+
+.text_block6 {
+  margin-right: 121px;
+  padding-left: 143px;
+}
+
+
+.text_block7 {
+  margin-right: 121px;
+  padding-left: 24px;
+
+}
+
+.text_block8 {
+  margin-right: 117px;
+  padding-left: 123px;
+
+
+}
+
+.text_block9 {
+  margin-right: 335px;
+
+}
+
+.block_text_three {
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.block_text_three1 {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.button_click {
+  padding: 10px;
+  background-color: #dadce0;
+  border: none;
+  color: #978080;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.click_blocks {
+  margin-top: 20px;
+
+}
+
+.click_label1 {
+  margin-top: 10px;
+
+  margin-right: -40px;
+
+
+}
+
+
+/* Блок 3 */
+.dropbtn {
+  background-color: #ffffff;
+  color: #b39999;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+  border: 1px solid #c9c9c9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 175px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid #c9c9c9;
+
+
+}
+
+.dropdown-content a {
+  color: #c9c9c9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #c9c9c9;
+  color: #7c8192;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+
+}
+
+.fa {
+  padding-left: 50px;
+}
+
+.click_defold {
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-color: #f0f6ff;
+  border-radius: 5px;
+
+  margin: 20px;
+  padding: 20px 40px 20px 40px;
+  color: #4e5e99;
+}
+
+.click_defold:hover {
+  background-color: #3861fb;
+  color: #ffffff;
+
+}
+
+.click_save {
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-color: #f0f6ff;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px 55px 20px 55px;
+  color: #4e5e99;
+
+}
+
+.click_save:hover {
+  background-color: #3861fb;
+  color: #ffffff;
+
+}
+
+/* Стили для подложки */
+
+.overlay {
+
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .text_block {
+    margin-right: 385px;
+  }
+
+  .ferst_block {
+    display: flex;
+    margin-left: auto;
+    margin-right: 350px;
+  }
+
+  .ferst_blocks {
+    display: flex;
+    margin-left: auto;
+    margin-right: 187px;
+  }
+
+  .ferst_blockss {
+    display: flex;
+    margin-left: auto;
+    margin-right: 525px;
+  }
+
+  .text_block1 {
+    margin-right: 294px;
+  }
+
+
+  .dropbtn {
+    background-color: #ffffff;
+    color: #b39999;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+
+  }
+
+  .click_blocks {
+    margin-top: 20px;
+    margin-right: -26px;
+  }
+
+  .subblock1 {
+    display: flex;
+    margin: 20px 142px 20px 0;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 48px;
+    margin-right: -134px;
+    border: 1px solid #c9c9c9;
+  }
+
+  .bottom_blocks {
+    display: flex;
+    margin-left: auto;
+    margin-right: 615px;
+    margin-left: -10px;
+
+  }
+
+  .text_block4 {
+    margin-right: 452px;
+  }
+
+  .midl_block {
+    display: flex;
+    margin-left: auto;
+    margin-right: 530px;
+    margin-left: -10px;
+  }
+
+  .subblockes {
+    display: flex;
+    margin-left: auto;
+    margin-right: 265px;
+  }
+
+  .text_block5 {
+    margin-right: 117px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .text_block4 {
+    margin-right: 395px;
+  }
+
+  .subblockess {
+    display: flex;
+    margin-left: auto;
+    margin-right: 540px;
+  }
+
+  .click_blocks {
+    margin-top: 20px;
+    margin-right: -26px;
+    margin-left: -21px;
+  }
+
+  .text_block2 {
+    margin-right: 362px;
+  }
+
+  .text_block {
+    margin-right: 320px;
+  }
+
+  .ferst_blocks {
+    display: flex;
+    margin-left: auto;
+    margin-right: 221px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .subblockess {
+    display: flex;
+    margin-left: auto;
+    margin-right: 543px;
+    margin-left: 190px;
+  }
+
+  .size_phone {
+    display: flex;
+    margin-left: auto;
+    margin-right: 540px;
+    margin-left: 106px;
+  }
+
+  .text_click {
+    display: flex;
+  }
+
+
+
+  .ferst_blocks {
+    display: flex;
+    margin-left: auto;
+    margin-right: 221px;
+    margin-left: 15px;
+  }
+
+}
